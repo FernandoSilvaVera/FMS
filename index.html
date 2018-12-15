@@ -10,11 +10,21 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 	<script src="./js/main.js"></script>
+	<script src="./js/datos/espana.js"></script>
+	<script src="./js/datos/argentina.js"></script>
 </head>
-<body onload="main()">
-	
+<body onload="main('2', 'esp')">
+
 	<div class="container mt-5">
-		<h2 class="mb-5" align="center">FMS ESPAÑA</h2>
+		<ul class="nav nav-tabs nav-justified" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" onclick="main('2', 'esp')">España</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" onclick="main('1', 'arg')">Argentina</a>
+			</li>
+		</ul>
+
 		<table class="table table-striped">
 			<thead>
 				<tr>
