@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bootstrap Example</title>
+	<title>FMS</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -13,18 +13,19 @@
 	<script src="./js/datos/espana.js"></script>
 	<script src="./js/datos/argentina.js"></script>
 </head>
-<body onload="main('2', 'esp')">
+<body onload="main('1', 'esp')">
 
 	<div class="container mt-5">
 		<ul class="nav nav-tabs nav-justified" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link active" data-toggle="tab" onclick="main('2', 'esp')">España</a>
+				<a class="nav-link active" data-toggle="tab" onclick="main('1', 'esp')">España</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" onclick="main('1', 'arg')">Argentina</a>
+				<a class="nav-link" data-toggle="tab" onclick="main('0', 'arg')">Argentina</a>
 			</li>
 		</ul>
-
+		<select class="form-control mt-3" id="temporadas">
+		</select>
 		<table class="table table-striped">
 			<thead>
 				<tr>
